@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ul,
+  li,
+  ol {
+    list-style: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+    background-color: #222;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+@layer components {
+  .list-container {
+    @apply w-full max-w-[1000px] grid m-[10px_auto] p-[15px] gap-[15px] justify-items-center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

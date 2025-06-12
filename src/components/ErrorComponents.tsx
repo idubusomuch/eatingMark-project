@@ -22,13 +22,17 @@ export function EmptyResult() {
   return <ErrorComponents message="표시할 데이터가 없습니다." />;
 }
 
+export function LocationError() {
+  return <ErrorComponents message="위치 정보를 받아오지 못했습니다." />;
+}
+
 export function PageNotFound() {
   return (
-    <>
+    <div className="text-center">
       <ErrorComponents message="404 - 페이지를 찾을 수 없습니다." />
-      <button className="text-center bg-[#000] text-white py-3 px-5 rounded-lg">
+      <button className="bg-[#111] text-white py-3 px-5 rounded-lg">
         <Link to="/">메인 화면으로 돌아가기</Link>
       </button>
-    </>
+    </div>
   );
 }

@@ -5,6 +5,9 @@ export type Place = {
     src: string;
     alt: string;
   };
+  lat: number;
+  lon: number;
+  description: string;
 };
 
 export type PlacesResponse = {

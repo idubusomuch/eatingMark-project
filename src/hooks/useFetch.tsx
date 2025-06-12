@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+// 프로미스 반환
 type useFetchProps<T> = {
   query: () => Promise<T>;
 };

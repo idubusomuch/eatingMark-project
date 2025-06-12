@@ -12,7 +12,8 @@
       "@api/*": ["api/*"],
       "@hooks/*": ["hooks/*"],
       "@pages/*": ["pages/*"],
-      "@_types/*": ["_types/*"]
+      "@_types/*": ["_types/*"],
+      "@utils/*": ["utils/*"]
     },
 
     /* Bundler mode */
